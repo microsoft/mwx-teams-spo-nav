@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://gov612386.sharepoint.com/sites/dev/SitePages/Navigation-Panel.aspx",
+      "customActions": {
+        "2982509b-3fff-49f8-8c42-6d4404bc346c": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "navigationPanel": {
+      "pageUrl": "https://gov612386.sharepoint.com/sites/dev/SitePages/Navigation-Panel.aspx",
+      "customActions": {
+        "2982509b-3fff-49f8-8c42-6d4404bc346c": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "bottom": "Test message"
+          }
+        }
+      }
+    }
+  }
+}

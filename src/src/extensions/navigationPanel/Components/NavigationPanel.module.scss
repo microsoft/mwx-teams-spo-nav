@@ -1,0 +1,19 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.yinzNavigationPanel {
+  .yinzCommandBar {
+    background-color: transparent;
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .yinzNav {  
+    button:disabled {
+      cursor: default;
+      color: #000000;
+    }    
+   }
+   
+}
