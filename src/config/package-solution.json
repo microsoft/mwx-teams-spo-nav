@@ -1,23 +1,23 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "spo-teams-navigation",
+    "name": "mwe-teams-spo-nav",
     "id": "c40b89d1-d05f-4623-b02e-b78276a050d2",
-    "version": "1.0.0.4",
+    "version": "1.0.0.5",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "developer": {
-      "name": "",
-      "websiteUrl": "",
-      "privacyUrl": "",
-      "termsOfUseUrl": "",
+      "name": "Modern Work Experiences",
+      "websiteUrl": "https://github.com/microsoft/mwx-teams-spo-nav",
+      "privacyUrl": "https://github.com/microsoft/mwx-teams-spo-nav/wiki/privacy",
+      "termsOfUseUrl": "https://github.com/microsoft/mwx-teams-spo-nav/wiki/terms-of-use",
       "mpnId": ""
     },
     "features": [
       {
-        "title": "Application Extension - Deployment of custom action.",
-        "description": "Deploys a custom action with ClientSideComponentId association",
+        "title": "Teams Embedded SPO Navigation Application Extension.",
+        "description": "Deploys a custom action to enable navigation in SharePoint Online sites that is embedded in Teams",
         "id": "a82cd97d-a40e-4cc1-a0ff-626aab926f9f",
         "version": "1.0.0.0",
         "assets": {
