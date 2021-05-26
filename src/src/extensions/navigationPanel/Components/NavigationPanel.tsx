@@ -9,7 +9,7 @@ import { ICommandBarItemProps, CommandBar } from '@fluentui/react/lib/CommandBar
 import { Panel, PanelType } from '@fluentui/react/lib/Panel';
 import { Pivot, PivotItem } from '@fluentui/react/lib/Pivot';
 import { Nav, INavLinkGroup, INavLink, INavStyles, INavProps } from '@fluentui/react/lib/Nav';
-import { ThemeProvider, PartialTheme } from "@fluentui/react/lib/Theme";
+import { ThemeProvider, PartialTheme, registerDefaultFontFaces } from "@fluentui/react/lib/Theme";
 import { SPHttpClient, SPHttpClientConfiguration, SPHttpClientResponse, ODataVersion, ISPHttpClientConfiguration } from '@microsoft/sp-http';
 
 export default class NavigationPanel extends React.Component<INavigationPanelProps, INavigationPanelState> {  
@@ -22,6 +22,8 @@ export default class NavigationPanel extends React.Component<INavigationPanelPro
     const currentUrl = window.location.href.toLocaleLowerCase();        
     this._showNavigation = ((inTeams) && (currentUrl.indexOf('mwx-nav=hide') == -1)) || ((!inTeams) && (currentUrl.indexOf('mwx-nav=show') != -1));
   
+    console.log(`Show Teams Navigation = ${this._showNavigation}`);
+
     this.state = {
       isOpen: false,
       hubLinks: [] as INavLinkGroup[],
@@ -227,8 +229,8 @@ export default class NavigationPanel extends React.Component<INavigationPanelPro
     });        
   }
 
-  private _getNavLinksFromSiteNavigationResult = (result : ISiteNavigationResult) : void => {    
-    const links: INavLinkGroup[] = [ { links: [] } ];
+  private _getNavLinksFromSiteNavigationResult = (result : ISiteNavigationResult) : void => {            
+    const links: INavLinkGroup[] = (result.value.length ===0) ? [] : [ { links: [] } ];
     
     for (var index = 0; index < result.value.length; index++) {
       if (result.value[index].IsVisible && result.value[index].Url != "") {
