@@ -6,7 +6,7 @@ build.addSuppression(`Warning - [sass] The local CSS class 'ms-Grid' is not came
 
 let copyPackageSubtask = build.subTask('copy-package-subtask', function(gulp, buildOptions, done) {
   return gulp.src('./sharepoint/solution/*.sppkg')
-             .pipe(gulp.dest('./../../../solution/'));  
+             .pipe(gulp.dest('./../solution/'));  
 });
 
 // Register the task with gulp command line
