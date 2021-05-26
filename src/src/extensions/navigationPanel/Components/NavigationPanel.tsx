@@ -20,7 +20,7 @@ export default class NavigationPanel extends React.Component<INavigationPanelPro
     
     const inTeams = (window.self !== window.top);        
     const currentUrl = window.location.href.toLocaleLowerCase();        
-    this._showNavigation = ((inTeams) && (currentUrl.indexOf('sho=noteams') == -1)) || ((!inTeams) && (currentUrl.indexOf('sho=sp') != -1));
+    this._showNavigation = ((inTeams) && (currentUrl.indexOf('mwx-nav=hide') == -1)) || ((!inTeams) && (currentUrl.indexOf('mwx-nav=show') != -1));
   
     this.state = {
       isOpen: false,
@@ -93,19 +93,7 @@ export default class NavigationPanel extends React.Component<INavigationPanelPro
   private _getMainCommandBarFarItems = () : ICommandBarItemProps[] => {
     
 
-    const items: ICommandBarItemProps[] = [    
-      // {
-      //   key: 'showNav',
-      //   name: '',
-      //   title: strings.ShowPanelButtonTitle,
-      //   ariaLabel: strings.ShowPanelButtonTitle,          
-      //   cacheKey: 'showNav',
-      //   iconProps: {
-      //       iconName: 'GlobalNavButton'
-      //   },
-      //   split: true,
-      //   onClick: () => {this.setState({ isOpen: true });}
-      // },       
+    const items: ICommandBarItemProps[] = [                 
       {
         key: 'navBack',
         name: '',
@@ -195,8 +183,7 @@ export default class NavigationPanel extends React.Component<INavigationPanelPro
       return response.json();  
     })
     .then((response: IHubSiteDataResult) : void => {      
-      const hubSiteData : IHubSiteData = JSON.parse(response.value);
-      //console.log(hubSiteData);
+      const hubSiteData : IHubSiteData = JSON.parse(response.value);      
       this._getNavLinksFromHubSiteData(hubSiteData);
     });        
   }
@@ -217,13 +204,8 @@ export default class NavigationPanel extends React.Component<INavigationPanelPro
     }
 
     for (var index = 0; index < hubSiteData.navigation.length; index++) {
-      links[0].links.push(this._getNavLinkFromNavigation(hubSiteData.navigation[index], 1));
-      
-      // links.push( {links: [] });
-      // links[index + 1].links.push(this._getNavLinkFromNavigation(hubSiteData.navigation[index], 1));
-    }
-
-    //console.log(links);
+      links[0].links.push(this._getNavLinkFromNavigation(hubSiteData.navigation[index], 1));          
+    }    
 
     this.setState({ hubLinks: links});
   }
@@ -245,25 +227,18 @@ export default class NavigationPanel extends React.Component<INavigationPanelPro
     });        
   }
 
-  private _getNavLinksFromSiteNavigationResult = (result : ISiteNavigationResult) : void => {
-    console.log(result);
-    
+  private _getNavLinksFromSiteNavigationResult = (result : ISiteNavigationResult) : void => {    
     const links: INavLinkGroup[] = [ { links: [] } ];
     
     for (var index = 0; index < result.value.length; index++) {
       if (result.value[index].IsVisible && result.value[index].Url != "") {
         links[0].links.push(this._getNavLinkFromNavigation(result.value[index], 1));
       }      
-    }    
-
-    console.log(links);
+    }        
     this.setState({ siteLinks: links});
   } 
   
-  private _getNavLinkFromNavigation = (siteNavigation : INavigation, linkLevel: number) : INavLink => {    
-    
-    //console.log(siteNavigation);
-    
+  private _getNavLinkFromNavigation = (siteNavigation : INavigation, linkLevel: number) : INavLink => {          
     const hasLink : boolean = (siteNavigation.Url != null && siteNavigation.Url.indexOf('linkless.header') == -1);
 
     const link : INavLink = {
@@ -275,8 +250,7 @@ export default class NavigationPanel extends React.Component<INavigationPanelPro
       links: [],
       disabled: !hasLink
     };
-
-    //console.log(`Children: ${hubNavigation.Children.length}`);
+    
     if (siteNavigation.Children != null) {
       for (var index = 0; index < siteNavigation.Children.length; index++) {
         if ((siteNavigation.Children[index].IsVisible == null) || (siteNavigation.Children[index].IsVisible)) {        
@@ -287,6 +261,5 @@ export default class NavigationPanel extends React.Component<INavigationPanelPro
 
     return link;
   }
-
 }
 
