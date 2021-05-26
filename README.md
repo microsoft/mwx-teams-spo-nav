@@ -6,7 +6,7 @@ Version|Published
 
 
 [Supported Clouds](https://github.com/microsoft/mwe-teams-spo-nav/wiki/Supported-Clouds)|[Documentation](https://github.com/microsoft/mwe-teams-spo-nav/wiki)|[Deployment Guide](https://github.com/microsoft/mwe-teams-spo-nav/wiki/Deployment-Guide)|[Release Notes](https://github.com/microsoft/mwe-teams-spo-nav/wiki/Release-Notes)
-
+-|-|-|-
 
 Adding a modern SharePoint site to Microsoft Teams as an app enables users to access all their site content without having to leave Teams. Example scenarios include:
 * Adding your corporate intranet to Teams for easy discovery of news and content.
@@ -14,8 +14,10 @@ Adding a modern SharePoint site to Microsoft Teams as an app enables users to ac
 * Add the [New Employee Onboarding](https://docs.microsoft.com/en-us/sharepoint/provision-neo-hub) look book to Teams to empower new hires with the information they need to be successful.
 
 Teams supresses SharePoint's navigation when viewing a site in Teams. While this behavior is desired for some scenarios (like the [Me Hub](https://aka.ms/me-hub)), there are others (like the examples mentioned) where users need the ability navigate throughout a site.  This solution addresses those use cases by adding navigation back into a SharePoint site when it detects it is running in Teams.  
-There is a url paramater that can specified to supress the navigation for those scenarios where you don't navigation. 
-If your site has both hub and site navigation, there will be a pivot that will let you select what navigation to view.
+
+### Features
+* Url paramater that can specified to supress the navigation for those scenarios where you don't navigation. 
+* If your site has both hub and site navigation, there will be a pivot that will let you select what navigation to view.
 
 ![Usage gif](https://github.com/microsoft/mwx-teams-spo-nav/wiki/assets/teams-spo-nav.gif)
 
