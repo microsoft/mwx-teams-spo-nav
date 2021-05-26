@@ -34,7 +34,8 @@ export default class NavigationPanelApplicationCustomizer
   private _onDispose(): void {    
   }
 
-  private _renderPlaceHolders(): void {        
+  private _renderPlaceHolders(): void {            
+
     if (!this._topPlaceholder) {
       this._topPlaceholder = this.context.placeholderProvider.tryCreateContent(PlaceholderName.Top,{ onDispose: this._onDispose });
       

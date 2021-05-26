@@ -1,9 +1,9 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "mwe-teams-spo-nav",
+    "name": "MWX Teams SPO Navigation",
     "id": "c40b89d1-d05f-4623-b02e-b78276a050d2",
-    "version": "1.0.0.5",
+    "version": "1.0.0.6",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
@@ -30,6 +30,6 @@
     ]
   },
   "paths": {
-    "zippedPackage": "solution/spo-teams-navigation.sppkg"
+    "zippedPackage": "solution/mwx-teams-spo-nav.sppkg"
   }
 }
