@@ -13,7 +13,9 @@ Adding a modern SharePoint site to Microsoft Teams as an app enables users to ac
 * Add the [Learning Pathways](https://aka.ms/learningpathways) look book to Teams to provide Microsoft 365 training to your users.
 * Add the [New Employee Onboarding](https://docs.microsoft.com/en-us/sharepoint/provision-neo-hub) look book to Teams to empower new hires with the information they need to be successful.
 
-Teams supresses SharePoint's navigation when viewing a site in Teams. While this behavior is desired for some scenarios (like the [Me Hub](https://aka.ms/me-hub)), there are others (like the examples mentioned) where users need the ability navigate throughout a site.  This solution addresses those use cases by adding navigation back into a SharePoint site when it detects it is running in Teams.  There is a url paramater that can specified to supress the navigation for those scenarios where you don't navigation. In addition, if your site has both hub and site navigation, there will be a pivot that will let you select what navigation to view.
+Teams supresses SharePoint's navigation when viewing a site in Teams. While this behavior is desired for some scenarios (like the [Me Hub](https://aka.ms/me-hub)), there are others (like the examples mentioned) where users need the ability navigate throughout a site.  This solution addresses those use cases by adding navigation back into a SharePoint site when it detects it is running in Teams.  
+There is a url paramater that can specified to supress the navigation for those scenarios where you don't navigation. 
+If your site has both hub and site navigation, there will be a pivot that will let you select what navigation to view.
 
 ![Usage gif](https://github.com/microsoft/mwx-teams-spo-nav/wiki/assets/teams-spo-nav.gif)
 
@@ -34,11 +36,11 @@ Now all your SharePoint sites in Teams will have Navigation!
 
 ## Feedback
 
-Thoughts? Questions? Ideas? Bugs? Share them with us [here](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/issues/new).
+Thoughts? Questions? Ideas? Bugs? Share them with us [here](https://github.com/microsoft/mwx-teams-spo-nav/issues/new).
 
 ## Legal notice
 
-This app template is provided under the [MIT License](https://github.com/OfficeDev/microsoft-teams-company-communicator-app/blob/master/LICENSE) terms.  In addition to these terms, by using this app template you agree to the following:
+This app template is provided under the [MIT License](https://github.com/microsoft/mwx-teams-spo-nav/blob/master/LICENSE) terms.  In addition to these terms, by using this app template you agree to the following:
 
 - You, not Microsoft, will license the use of your app to users or organization. 
 
