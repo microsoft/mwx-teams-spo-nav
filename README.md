@@ -5,8 +5,14 @@ Version|Published
 1.0.0 | May 27, 2021 
 
 
+
 [Supported Clouds](https://github.com/microsoft/mwe-teams-spo-nav/wiki/Supported-Clouds)|[Documentation](https://github.com/microsoft/mwe-teams-spo-nav/wiki)|[Deployment Guide](https://github.com/microsoft/mwe-teams-spo-nav/wiki/Deployment-Guide)|[Release Notes](https://github.com/microsoft/mwe-teams-spo-nav/wiki/Release-Notes)
 -|-|-|-
+
+Commercial|GCC|GCC High|GCC DoD
+-|-|-|-
+![Supported](assets/supported.png)|![Supported](assets/supported.png)|![Unknown](assets/unknown-supported.png)|![Unknown](assets/unknown-supported.png)
+
 
 Adding a modern SharePoint site to Microsoft Teams as an app enables users to access all their site content without having to leave Teams. Example scenarios include:
 * Add your Corporate intranet to Teams for easy discovery of news and content.
@@ -36,14 +42,6 @@ The **mwx-nav** url parameter can be used to hide the navigation in Teams or sho
 
 Now all your SharePoint sites in Teams will have Navigation!
 
-## Supported Clouds
-
-Version|Supported
--|-
-Commercial|![Supported](assets/supported.png)
-GCC|![Supported](assets/supported.png)
-GCC High|![Unknown](assets/unknown-supported.png)
-GCC DoD|![Unknown](assets/unknown-supported.png)
 
 ## Feedback
 
