@@ -4,6 +4,6 @@
         Title="NavigationPanel"
         Location="ClientSideExtension.ApplicationCustomizer"
         ClientSideComponentId="2982509b-3fff-49f8-8c42-6d4404bc346c"
-        ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+        ClientSideComponentProperties="{&quot;display&quot;:&quot;&quot;}">
     </CustomAction>
 </Elements>

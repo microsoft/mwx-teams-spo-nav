@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
     <ClientSideComponentInstance
-        Title="NavigationPanel"
+        Title="mwx-teams-spo-nav"
         Location="ClientSideExtension.ApplicationCustomizer"
         ComponentId="2982509b-3fff-49f8-8c42-6d4404bc346c"
-        Properties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+        Properties="{&quot;display&quot;:&quot;&quot;}">
     </ClientSideComponentInstance>
 </Elements>
