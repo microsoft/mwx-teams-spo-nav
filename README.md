@@ -2,17 +2,22 @@
 
 Version|Published
 -|-
-1.0.0 | May 27, 2021 
+1.0.0 | May 28, 2021 
+[Release Notes](https://github.com/microsoft/mwx-teams-spo-nav/wiki/Supported-Clouds/Release-Notes)
 
-
-
-[Supported Clouds](https://github.com/microsoft/mwe-teams-spo-nav/wiki/Supported-Clouds)|[Documentation](https://github.com/microsoft/mwe-teams-spo-nav/wiki)|[Deployment Guide](https://github.com/microsoft/mwe-teams-spo-nav/wiki/Deployment-Guide)|[Release Notes](https://github.com/microsoft/mwe-teams-spo-nav/wiki/Release-Notes)
+[Supported Clouds](https://github.com/microsoft/mwx-teams-spo-nav/wiki/Supported-Clouds)|[Documentation](https://github.com/microsoft/mwx-teams-spo-nav/wiki)|[Deployment Guide](https://github.com/microsoft/mwx-teams-spo-nav/wiki/Deployment-Guide)|[Release Notes](https://github.com/microsoft/mwx-teams-spo-nav/wiki/Release-Notes)
 -|-|-|-
 
+## Supported Versions of Office 365
 Commercial|GCC|GCC High|GCC DoD
 -|-|-|-
-![Supported](assets/supported.png)|![Supported](assets/supported.png)|![Unknown](assets/unknown-supported.png)|![Unknown](assets/unknown-supported.png)
+![Supported](assets/supported.png)|![Supported](assets/supported.png)|![Unknown](assets/supported.png)|![Unknown](assets/unknown-supported.png)
 
+
+## SharePoint Framework Version
+![version](https://img.shields.io/badge/version-1.11-green.svg)
+
+## Overview
 
 Adding a modern SharePoint site to Microsoft Teams as an app enables users to access all their site content without having to leave Teams. Example scenarios include:
 * Add your Corporate intranet to Teams for easy discovery of news and content.
@@ -21,13 +26,13 @@ Adding a modern SharePoint site to Microsoft Teams as an app enables users to ac
 
 Teams supresses the navigation when viewing a SharePoint site in Teams. While this behavior is desired in some scenarios (like the [Me Hub](https://aka.ms/me-hub)), there are others (like the examples previously mentioned) where users need the ability navigate within a site.  This solution addresses those scenarios by adding  the navigation back into a SharePoint site when it detects that it's running in Teams.  
 
-### Features
-* Url paramater that can specified to supress the navigation for those scenarios where you don't navigation. 
+## Features
 * If your site has both hub and site navigation, there will be a pivot that will let you select what navigation to view.
+* Url paramater that can specified to supress the navigation for those scenarios where you don't navigation. 
 
 ![Usage gif](assets/teams-spo-nav.gif)
 
-## Url Parameter
+## Parameters
 The **mwx-nav** url parameter can be used to hide the navigation in Teams or show it in a SharePoint site not in Teams.  Specify a value of:
 * **hide** to hide the navigation when the site is in Teams.  An example url would look like: https://contoso.sharepoint.com/sites/me?mwx-nav=hide
 * **show** to show the navigation when the site is not in Teams.  An example url would look like: https://contoso.sharepoint.com/sites/me?mwx-nav=show
