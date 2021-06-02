@@ -1,0 +1,59 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.8",
+    "version": "1.0.2",
+    "showLoadingIndicator": true,
+    "isFullScreen": false,
+    "id": "05fcb05a-2fed-4e1d-89a2-8621fcbade7e",
+    "packageName": "mwx-teams-spo-nav.microsoft.com",
+    "developer": {
+        "name": "Modern Work Experiences",
+        "websiteUrl": "https://github.com/microsoft/mwx-teams-spo-nav",
+        "privacyUrl": "https://github.com/microsoft/mwx-teams-spo-nav/wiki/privacy",
+        "termsOfUseUrl": "https://github.com/microsoft/mwx-teams-spo-nav/wiki/terms-of-use"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Teams SPO Nav Example",
+        "full": "Modern Work Experiences Teams SharePoint Online Navigation Example"
+    },
+    "description": {
+        "short": "Demonstrates how the SPO navigation will work in Teams.",
+        "full": "Demonstrates the SPO navigation will work in Teams.  How to hide it in teams and how to show it in SharePoint outside of Teams."
+    },
+    "accentColor": "#2E7AA2",
+    "staticTabs": [
+        {
+            "entityId": "nav",
+            "name": "With Nav",
+            "contentUrl": "https://<absolute site url>/_layouts/15/teamslogon.aspx?SPFX=true&dest=<relative site url>",
+            "websiteUrl": "https://<absolute site url>?mwx-nav=show",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+            "entityId": "nonav",
+            "name": "No Nav",
+            "contentUrl": "https://<absolute site url>/_layouts/15/teamslogon.aspx?SPFX=true&dest=<relative site url>?mxw-nav=hide",
+            "websiteUrl": "https://<absolute site url>",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "<tenant>.sharepoint.com"
+    ],
+    "webApplicationInfo": {
+        "id": "00000003-0000-0ff1-ce00-000000000000",
+        "resource": "https://<tenant>.sharepoint.com"
+    }
+}
