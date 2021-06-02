@@ -3,7 +3,6 @@
 Version|Published
 -|-
 1.0.0 | May 28, 2021 
-[Release Notes](https://github.com/microsoft/mwx-teams-spo-nav/wiki/Supported-Clouds/Release-Notes)
 
 [Supported Clouds](https://github.com/microsoft/mwx-teams-spo-nav/wiki/Supported-Clouds)|[Documentation](https://github.com/microsoft/mwx-teams-spo-nav/wiki)|[Deployment Guide](https://github.com/microsoft/mwx-teams-spo-nav/wiki/Deployment-Guide)|[Release Notes](https://github.com/microsoft/mwx-teams-spo-nav/wiki/Release-Notes)
 -|-|-|-
