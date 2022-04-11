@@ -10,20 +10,20 @@ import { Panel, PanelType } from '@fluentui/react/lib/Panel';
 import { Pivot, PivotItem } from '@fluentui/react/lib/Pivot';
 import { Nav, INavLinkGroup, INavLink, INavStyles, INavProps } from '@fluentui/react/lib/Nav';
 import { ThemeProvider, PartialTheme, registerDefaultFontFaces } from "@fluentui/react/lib/Theme";
+
 import { SPHttpClient, SPHttpClientConfiguration, SPHttpClientResponse, ODataVersion, ISPHttpClientConfiguration } from '@microsoft/sp-http';
 
 export default class NavigationPanel extends React.Component<INavigationPanelProps, INavigationPanelState> {  
   private _showNavigation: boolean;    
 
   constructor(props: INavigationPanelProps) {
-    super(props);
-    
+    super(props);    
     const inTeams = (window.self !== window.top);        
     const currentUrl = window.location.href.toLocaleLowerCase();        
     this._showNavigation = ((inTeams) && (currentUrl.indexOf('mwx-nav=hide') == -1)) || ((!inTeams) && (currentUrl.indexOf('mwx-nav=show') != -1));
   
     console.log(`Show Teams Navigation = ${this._showNavigation}`);
-
+    
     this.state = {
       isOpen: false,
       hubLinks: [] as INavLinkGroup[],
@@ -38,7 +38,7 @@ export default class NavigationPanel extends React.Component<INavigationPanelPro
     }
   } 
 
-  public render(): JSX.Element { 
+  public render() { 
     
     // If we shouldn't show the navigation or if there is no navigation to show, return null
     if ((!this._showNavigation) || ((this.state.hubLinks.length == 0) && (this.state.siteLinks.length == 0))) {
