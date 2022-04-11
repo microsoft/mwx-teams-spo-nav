@@ -8,7 +8,7 @@ Adds the ability to view the SharePoint navigation, navigate back and forwards, 
 
 ## Used SharePoint Framework Version
 
-![version](https://img.shields.io/badge/version-1.11-green.svg)
+![version](https://img.shields.io/badge/version-1.14-green.svg)
 
 ## Applies to
 

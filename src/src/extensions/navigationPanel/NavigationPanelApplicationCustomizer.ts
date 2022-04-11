@@ -12,6 +12,7 @@ import {
   PlaceholderName
 } from '@microsoft/sp-application-base';
 import { ThemeProvider } from '@fluentui/react/lib/Theme';
+import { initializeIcons } from '@fluentui/react/lib/Icons';
 
 const LOG_SOURCE: string = 'NavigationPanelApplicationCustomizer';
 
@@ -26,6 +27,7 @@ export default class NavigationPanelApplicationCustomizer
 
   @override
   public onInit(): Promise<void> {
+    initializeIcons();
     this.context.placeholderProvider.changedEvent.add(this, this._renderPlaceHolders);    
     this._renderPlaceHolders();
     return Promise.resolve();

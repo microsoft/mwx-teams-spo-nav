@@ -3,16 +3,27 @@
   "solution": {
     "name": "MWX Teams SPO Navigation",
     "id": "c40b89d1-d05f-4623-b02e-b78276a050d2",
-    "version": "1.0.0.7",
+    "version": "1.0.1.4",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "developer": {
-      "name": "Modern Work Experiences",
+      "name": "TAAG",
       "websiteUrl": "https://github.com/microsoft/mwx-teams-spo-nav",
       "privacyUrl": "https://github.com/microsoft/mwx-teams-spo-nav/wiki/privacy",
       "termsOfUseUrl": "https://github.com/microsoft/mwx-teams-spo-nav/wiki/terms-of-use",
       "mpnId": ""
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Adds navigation into SharePoint sites viewed in Teams"
+      },
+      "longDescription": {
+        "default": "Adds the SharePont navigation and browser back, forth, and refresh buttons in SharePoint sites viewed in Teams"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
     },
     "features": [
       {
