@@ -1,11 +1,15 @@
 {
   "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
     "isCreatingSolution": true,
     "environment": "spo",
-    "version": "1.11.0",
+    "version": "1.14.0",
     "libraryName": "spo-teams-navigation",
     "libraryId": "c40b89d1-d05f-4623-b02e-b78276a050d2",
     "packageManager": "npm",
+    "solutionName": "mwx-teams-spo-nav",
+    "solutionShortDescription": "Adds navigation into SharePoint sites viewed in Teams",
+    "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "componentType": "extension",
     "extensionType": "ApplicationCustomizer"

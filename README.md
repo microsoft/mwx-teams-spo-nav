@@ -1,9 +1,5 @@
 # SharePoint Online Navigation in Teams
 
-Version|Published
--|-
-1.0.0 | May 28, 2021 
-
 [Supported Clouds](https://github.com/microsoft/mwx-teams-spo-nav/wiki/Supported-Clouds)|[Documentation](https://github.com/microsoft/mwx-teams-spo-nav/wiki)|[Deployment Guide](https://github.com/microsoft/mwx-teams-spo-nav/wiki/Deployment-Guide)|[Release Notes](https://github.com/microsoft/mwx-teams-spo-nav/wiki/Release-Notes)
 -|-|-|-
 
@@ -14,7 +10,7 @@ Commercial|GCC|GCC High|GCC DoD
 
 
 ## SharePoint Framework Version
-![version](https://img.shields.io/badge/version-1.11-green.svg)
+![version](https://img.shields.io/badge/version-1.14-green.svg)
 
 ## Overview
 
@@ -46,6 +42,11 @@ The **mwx-nav** url parameter can be used to hide the navigation in Teams or sho
 
 Now all your SharePoint sites in Teams will have Navigation!
 
+## Release History
+Version|Published|Notes
+-|-|-
+1.0.0 | May 28, 2021 | Initial Release
+1.0.1 | April 11, 2022 | Upgraded to SPFx 1.14 & addreesed issue with icons not always being visible
 
 ## Feedback
 
