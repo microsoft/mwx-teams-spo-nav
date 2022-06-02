@@ -15,7 +15,7 @@
     "@microsoft/sp-core-library": "1.14.0",
     "@microsoft/sp-dialog": "1.14.0",
     "install": "^0.13.0",
-    "npm": "^8.6.0",
+    "npm": "^8.11.0",
     "office-ui-fabric-react": "7.174.1"
   },
   "devDependencies": {
